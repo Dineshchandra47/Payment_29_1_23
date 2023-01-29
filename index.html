@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Payment page</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="action">
+        <h1>Payment</h1>
+
+        <h1>
+          <strong>$600 <i>USD</i></strong>
+        </h1>
+        <div class="disc">
+          <p>
+            &#x2705; Messaging &nbsp; &#x2705; Analytics <br />&#x2705; Support
+            &nbsp; &nbsp; &nbsp;&#x2705; Discounts
+            <br />
+            <strong>Know more</strong>
+          </p>
+        </div>
+        <label for="cnum">Pay with Card</label><br />
+        <input
+          class="box"
+          autocomplete="off"
+          type="number"
+          name="cardNumber"
+          id="cardNumber"
+          placeholder="1234 1234 1234 1234"
+        /><br />
+
+        <div class="div1">
+          <label for="year">Card expiry year</label><br />
+          <input
+            class="box2"
+            type="text"
+            id="inputExpDate"
+            placeholder="MM / YY"
+            maxlength="7"
+          />
+        </div>
+        <div class="div1">
+          <label for="CVV">Card CVV</label><br />
+          <input
+            class="box2"
+            type="CVV"
+            name="cvv"
+            id="cvv"
+            placeholder="cvv"
+          /><br />
+        </div>
+        <button class="btn" type="button">Pay now</button>
+        <button class="btn" type="button">close</button>
+      </form>
+      <div class="invoice">
+        Invoice
+        <div class="down1">Download</div>
+        <div>
+          Pro membership
+          <div class="down2">$600</div>
+        </div>
+        <div>
+          Platform fee
+          <div class="down3">$10</div>
+        </div>
+        <div class="bold">
+          TOTAL Amount
+          <div class="down4">$610</div>
+        </div>
+      </div>
+      <div class="remove">
+        <h1>Remove?</h1>
+        <p>Please confirm the changes, you can't redo again</p>
+      </div>
+      <button class="remove_btn">Confirm</button>
+      <h2 class="take">Take me back</h2>
+    </div>
+  </body>
+</html>
